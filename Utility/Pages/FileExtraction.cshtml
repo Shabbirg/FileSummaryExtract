@@ -1,0 +1,27 @@
+﻿@page
+@model Utility.Pages.FileExtractionModel
+@{
+}
+
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-9">
+            <div class="card">
+                <div class="card-header">Upload Test Files</div>
+                <div class="card-body">
+                    <form method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="fileInput">Select Files</label>
+                            <input asp-for="FileExtract.files" type="file" name="files" id="fileInput" multiple />
+                        </div>
+                        <div class="mt-4 text-center">
+                            <button type="submit" class="btn btn-primary">Upload and Process</button>
+                            <button type="reset" class="btn btn-warning">Reset</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
